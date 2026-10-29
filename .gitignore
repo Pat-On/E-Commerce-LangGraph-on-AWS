@@ -1,0 +1,32 @@
+# Secrets and local AWS config — never commit
+.env
+.env.*
+!.env.example
+.aws/
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Lambda deployment packages and build output
+*.zip
+package/
+build/
+dist/
+
+# Editor / OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Office lock files (e.g. while product_catalog.docx is open)
+~$*
